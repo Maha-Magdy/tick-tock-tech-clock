@@ -1,1 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 
+body {
+  background-color: #fffdfb;
+  height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock-body {
+  width: 35em;
+  height: 35em;
+  border-radius: 50%;
+  border: 2px solid black;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.2) -5px 12px 8px;
+  position: relative;
+}
+
+.clock-bg-text {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  padding: 1em;
+  font-family: "Caveat", cursive;
+  font-size: 2.75em;
+  transform-origin: 0%;
+  transform: rotate(-10deg);
+}
+
+.clock-bg-text p {
+  margin: 0;
+}
+
+.clock-bg-numbers {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  font-family: "Caveat", cursive;
+}
+
+.clock-bg-number-0,
+.clock-bg-number-5,
+.clock-bg-number-4 {
+  position: absolute;
+}
+
+.clock-bg-number-0 {
+  font-size: 8em;
+  bottom: 25%;
+  right: 10%;
+}
+
+.clock-bg-number-5 {
+  font-size: 9em;
+  bottom: 30%;
+  right: 18%;
+  transform: rotate(1deg);
+}
+
+.clock-bg-number-4 {
+  font-size: 7em;
+  bottom: 9%;
+  right: 15%;
+  transform: rotate(-71deg);
+}
