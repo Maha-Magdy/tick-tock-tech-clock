@@ -49,7 +49,14 @@ body {
 
 .clock-bg-number-0,
 .clock-bg-number-5,
-.clock-bg-number-4 {
+.clock-bg-number-4,
+.clock-bg-number-9,
+.clock-bg-number-8,
+.clock-bg-number-2,
+.clock-bg-number-3,
+.clock-bg-number-7,
+.clock-bg-number-6,
+.clock-bg-number-1 {
   position: absolute;
 }
 
@@ -71,4 +78,53 @@ body {
   bottom: 9%;
   right: 15%;
   transform: rotate(-71deg);
+}
+
+.clock-bg-number-9 {
+  font-size: 9em;
+  bottom: 21%;
+  right: 27%;
+  transform: rotate(7deg);
+}
+
+.clock-bg-number-8 {
+  font-size: 8em;
+  bottom: -1%;
+  right: 25%;
+  transform: rotate(16deg);
+}
+
+.clock-bg-number-2 {
+  font-size: 8em;
+  bottom: 10%;
+  right: 33%;
+  transform: rotate(-10deg);
+}
+
+.clock-bg-number-3 {
+  font-size: 10em;
+  bottom: -12%;
+  right: 40%;
+  transform: rotate(-18deg);
+}
+
+.clock-bg-number-7 {
+  font-size: 7em;
+  bottom: 8%;
+  left: 43%;
+  transform: rotate(15deg);
+}
+
+.clock-bg-number-6 {
+  font-size: 9em;
+  bottom: -22%;
+  left: 40%;
+  transform: rotate(275deg);
+}
+
+.clock-bg-number-1 {
+  font-size: 8em;
+  bottom: -5%;
+  left: 31%;
+  transform: rotate(350deg);
 }
