@@ -128,3 +128,43 @@ body {
   left: 31%;
   transform: rotate(350deg);
 }
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  padding: 2em;
+  box-sizing: border-box;
+}
+.hour-hand,
+.minute-hand,
+.second-hand {
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hour-hand {
+  width: 35%;
+  height: 0.5em;
+  left: 20%;
+  box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 6px;
+}
+
+.minute-hand {
+  width: 50%;
+  height: 0.5em;
+  left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 6px;
+}
+
+.second-hand {
+  width: 60%;
+  height: 0.25em;
+  left: 5%;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
