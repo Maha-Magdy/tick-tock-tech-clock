@@ -146,7 +146,9 @@ body {
   background-color: black;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-50%) rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
 }
 
 .hour-hand {
@@ -154,6 +156,7 @@ body {
   height: 0.5em;
   left: 20%;
   box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 6px;
+  transform-origin: 86%;
 }
 
 .minute-hand {
@@ -161,6 +164,7 @@ body {
   height: 0.5em;
   left: 5%;
   box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 6px;
+  transform-origin: 90.2%;
 }
 
 .second-hand {
@@ -168,6 +172,7 @@ body {
   height: 0.25em;
   left: 5%;
   box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 8px;
+  transform-origin: 75%;
 }
 
 .center-wheel {
