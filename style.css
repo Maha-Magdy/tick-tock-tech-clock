@@ -141,7 +141,8 @@ body {
 }
 .hour-hand,
 .minute-hand,
-.second-hand {
+.second-hand,
+.center-wheel {
   background-color: black;
   position: absolute;
   top: 50%;
@@ -166,5 +167,13 @@ body {
   width: 60%;
   height: 0.25em;
   left: 5%;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 10px 8px;
+}
+
+.center-wheel {
+  width: 1.75em;
+  height: 1.75em;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
