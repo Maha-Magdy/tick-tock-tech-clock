@@ -8,8 +8,9 @@ const setDate = () => {
   const seconds = now.getSeconds();
   const secondsDegree = (seconds / 60) * 360 + 90;
   secondHand.style.transform = `translateY(-50%) rotate(${secondsDegree}deg)`;
-  secondHand.style.transition = secondsDegree > 440 ? 'unset' : 'all 0.05s';
-  secondHand.style.transitionTimingFunction = secondsDegree > 440 ? 'unset' : 'cubic-bezier(0.1, 2.7, 0.58, 1)';
+  secondHand.style.transition = secondsDegree < 100 ? "unset" : "all 0.05s";
+  secondHand.style.transitionTimingFunction =
+    secondsDegree < 100 ? "unset" : "cubic-bezier(0.1, 2.7, 0.58, 1)";
 
   const minutes = now.getMinutes();
   const minutesDegree = (minutes / 60) * 360 + 90;
