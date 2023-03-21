@@ -19,6 +19,9 @@ const setDate = () => {
   const hours = now.getHours();
   const hoursDegree = (hours / 12) * 360 + 90;
   hourHand.style.transform = `translateY(-50%) rotate(${hoursDegree}deg)`;
+
+  const tickTockClockSound = new Audio('tick-tock-clock-sound.mp3');
+  tickTockClockSound.play();
 };
 
 setInterval(setDate, 1000);
