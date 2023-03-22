@@ -14,6 +14,15 @@
 
 <body>
     <div class="clock-body">
+        <div class="sound-option-container">
+            <input type="checkbox" id="sound-option" onchange="soundOptionHandler(this)">
+            <label for="sound-option">
+                <lord-icon class="music-note-icon" src="https://cdn.lordicon.com/kwsfrmbv.json" trigger="hover"
+                    colors="outline:#000000,primary:#000000" stroke="25"
+                    style="width:2.5em;height:2.5em;cursor:pointer;">
+                </lord-icon>
+            </label>
+        </div>
         <div class="clock-bg-text">
             <p>Whatever</p>
             <p>I'm late</p>
@@ -39,6 +48,7 @@
         </div>
     </div>
     <script src="./script.js" defer></script>
+    <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>
 
 </html>

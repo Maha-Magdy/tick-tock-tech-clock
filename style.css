@@ -10,6 +10,19 @@ body {
   justify-content: center;
 }
 
+.sound-option-container {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.sound-option-container label {
+}
+
 .clock-body {
   width: 35em;
   height: 35em;

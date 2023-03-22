@@ -1,6 +1,19 @@
 const secondHand = document.querySelector(".second-hand");
 const minuteHand = document.querySelector(".minute-hand");
 const hourHand = document.querySelector(".hour-hand");
+const musicNoteIcon = document.querySelector(".music-note-icon");
+const tickTockClockSound = new Audio('tick-tock-clock-sound.mp3');
+let isSoundOn = false;
+
+const soundOptionHandler = (e) => {
+  if (e.checked) {
+    isSoundOn = true;
+    musicNoteIcon.setAttribute('trigger', 'loop');
+  } else {
+    isSoundOn = false;
+    musicNoteIcon.setAttribute('trigger', 'hover');
+  }
+}
 
 const setDate = () => {
   const now = new Date();
@@ -20,8 +33,9 @@ const setDate = () => {
   const hoursDegree = (hours / 12) * 360 + 90;
   hourHand.style.transform = `translateY(-50%) rotate(${hoursDegree}deg)`;
 
-  const tickTockClockSound = new Audio('tick-tock-clock-sound.mp3');
-  tickTockClockSound.play();
+  if (isSoundOn) {
+    tickTockClockSound.play();
+  }
 };
 
 setInterval(setDate, 1000);
