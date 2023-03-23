@@ -5,7 +5,7 @@ Tick Tock Tech Clock is a web-based clock application that displays the time usi
 
 ![screenshot](./app_screenshot.png)
 
-* PS: After being inspired by Wes Bos' JAVASCRIPT30 course, I decided to follow it and build the Tick Tock Tech Clock application to keep my hands dirty with JavaScript. *
+*PS: After being inspired by Wes Bos' JAVASCRIPT30 course, I decided to follow it and build the Tick Tock Tech Clock application to keep my hands dirty with JavaScript.*
 
 ## Table of contents
 
