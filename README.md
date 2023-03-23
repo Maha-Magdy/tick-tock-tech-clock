@@ -31,7 +31,7 @@ PS: After being inspired by Wes Bos' JAVASCRIPT30 course, I decided to follow it
 Here are the links to the live demo and the video demo of the Tick Tock Tech Clock:
 
 - [Live Demo Link](https://maha-magdy.github.io/tick-tock-tech-clock/)
-- [Video Demo Link]( ./demonstration-video.mp4 )
+- Video Demo Link
 
 
 
